@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3ydNvZYKO6+kmb0Rh/4J8Q1kRyqGjni8FZJLeSoNhcRtyL5OwzAHbEowpUhCm5EAT6PYcqfsySMMG/2Xv2qWMw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Documents\\pc 기반 실습\\pc 기반 제어 22.03.22\\pc 기반 제어 22.03.22\\pc 기반 제어 22.03.22.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

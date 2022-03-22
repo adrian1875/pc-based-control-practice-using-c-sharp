@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.AssemblyInfo.cs
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\bin\Debug\net5.0\pc 기반 제어 22.03.22.exe
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\bin\Debug\net5.0\pc 기반 제어 22.03.22.deps.json
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\bin\Debug\net5.0\pc 기반 제어 22.03.22.runtimeconfig.json
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\bin\Debug\net5.0\pc 기반 제어 22.03.22.runtimeconfig.dev.json
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\bin\Debug\net5.0\pc 기반 제어 22.03.22.dll
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\bin\Debug\net5.0\pc 기반 제어 22.03.22.pdb
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.dll
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\refint\pc 기반 제어 22.03.22.dll
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.pdb
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\pc 기반 제어 22.03.22.genruntimeconfig.cache
+C:\Users\user\source\repos\pc 기반 제어 22.03.22\pc 기반 제어 22.03.22\obj\Debug\net5.0\ref\pc 기반 제어 22.03.22.dll
