@@ -6,21 +6,28 @@ namespace 배열__while__for
     {
         static void Main(string[] args)
         {
-            int[] arr1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 최조 입력값, 이를 자릿수를 계산하는데 사용
-            int[] arr2 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 자릿수 누적합을 위한 합계를 임시 저장, 각 자릿수의 최종 합을 저장함
-            int[] arr3 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 각 자릿수의 합을 구하기 위해 입력값을 저장함
-            int[] arr4 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 각 자릿수의 합을 구하기 위해 필요한 자릿수를 저장 
-            int[] pow_arr = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 10의 n승을 저장하는 변수
+            
+            uint[] arr1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 최조 입력값, 이를 자릿수를 계산하는데 사용
+            uint[] arr2 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 자릿수 누적합을 위한 합계를 임시 저장, 각 자릿수의 최종 합을 저장함
+            uint[] arr3 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 각 자릿수의 합을 구하기 위해 입력값을 저장함
+            uint[] arr4 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 각 자릿수의 합을 구하기 위해 필요한 자릿수를 저장 
+            uint[] arr5 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 각 자릿수의 합을 구하기 위해 필요한 자릿수를 저장 
+            uint[] pow_arr = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // 10의 n승을 저장하는 변수
+            uint[] idx_arr = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };  // arr2 배열에서 중복되는 숫자가 얼마나 있는지 찾아서 그 값을 저장하는 배열
 
-            int i, j, k;  // 반복을 위한 변수
-            int cnt = 1;  // 자릿수
-            int pow = 1; // 승수를 계산하기 위한 변슈
-            int temp = 0;  // 자릿수 합을 위한 변수
+            uint i, j, k;  // 반복을 위한 변수
+            uint cnt = 1;  // 자릿수
+            uint pow = 1;  // 승수를 계산하기 위한 변수
+            uint temp = 0;  // 자릿수 합을 위한 변수
+            uint idx = 0;  // 중복되는 수를 찾는 변수
+            uint max = 0;  // 중복이 가장 많은 값
+            uint max_idx = 0;  // 중복이 가장 많은 값의 인덱스
 
             for (i = 0; i < arr1.Length; i++)
             {
-                arr1[i] = int.Parse(Console.ReadLine());  // 입력 받음
+                arr1[i] = uint.Parse(Console.ReadLine());  // 입력 받음
                 arr3[i] = arr1[i];  // arr1을 자릿수를 저장하는 용도로 다시 사용할거라 arr3에 입력본을 복사함
+                //arr5[i] = arr1[i];  // arr1을 자릿수를 저장하는 용도로 다시 사용할거라 arr3에 입력본을 복사함
             }
 
             for (i = 0; i < arr1.Length; i++)
@@ -70,13 +77,34 @@ namespace 배열__while__for
                 temp = 0;
             }
 
-            // for (i = 0; i < arr2.Length; i++)  // 누적 합들을 출력
-            // {
-            //     Console.WriteLine(arr2[i]);
-            // }
+            // 각 위치별 중복 횟수 검사, arr2는 자릿수 합
+            for (i = 0; i < arr2.Length; i++)
+            {
+                for (j = 0; j < arr2.Length; j++)
+                {
+                    if (arr2[i] == arr2[j])  // 중복이면
+                    {
+                        idx += 1;  // 인덱스 증가
+                    }
+                }
+                idx_arr[i] = idx;  // 중복 확인이 끝나면 배열에 저장
+                idx = 0;
+            }
 
-            
+            // 가장 많이 중복된 것을 찾기
+            max = idx_arr[0];
 
+            for (i = 0; i < idx_arr.Length; i++)
+            {
+               if (idx_arr[i] > max)
+               {
+                   max = idx_arr[i];
+                   max_idx = i;
+               }
+            }
+
+            // 최빈값 출력
+            Console.WriteLine(arr2[max_idx]);           
         }
     }
 }
